@@ -1,20 +1,11 @@
 #!/usr/bin/env python3
-"""Let's duck type an iterable object"""
-from typing import List, Tuple, Iterable, Sequence
+""" Annotate the below function’s parameters and
+    return values with the appropriate types.
+    def element_length(lst):
+        return [(i, len(i)) for i in lst] """
+from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """
-    Annotating function’s parameters and
-    returning values with the appropriate types
-
-    Args:
-        lst (Iterable[Sequence]): An iterable object where each
-        element has a length.
-
-    Returns:
-        List[Tuple[Sequence, int]]: A list of tuples, where each
-        tuple contains an element from
-        the iterable and its length.
-    """
+    """ Let's duck type an iterable object """
     return [(i, len(i)) for i in lst]
