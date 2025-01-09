@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""Return the floor of a floating-point number."""
+""" Basic annotations - floor """
 
 
 def floor(n: float) -> int:
-    """
-    Function that takes a float `n` as an argument and returns its floor value,
-    which is the largest integer less than or equal to `n`.
-    """
+    """ type-annotated function floor which takes a float n as argument
+        and returns the floor of the float. """
     return int(n)
