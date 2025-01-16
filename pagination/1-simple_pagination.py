@@ -24,15 +24,15 @@ class Server:
             self.__dataset = dataset[1:]
 
         return self.__dataset
-    
+
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Gets page list of records
-        
+
         Args:
             page (int, optional): Number of page. Defaults to 1.
             page_size (int, optional):
             Size of elements in page. Defaults to 10.
-            
+
         Returns:
             List[List]: List of elements in a page
         """
@@ -40,4 +40,3 @@ class Server:
         assert (page > 0 and page_size > 0)
         beginning, end = index_range(page, page_size)
         return self.dataset()[beginning:end]
-    
