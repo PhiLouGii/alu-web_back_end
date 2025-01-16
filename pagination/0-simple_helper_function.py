@@ -7,11 +7,11 @@ from typing import Tuple
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """[summary]
-    
+
     Args:
         page (int): [description]
         page_size (int): [description]
-        
+
     Returns:
         Tuple[int, int]: particular pagination parameters
     """
